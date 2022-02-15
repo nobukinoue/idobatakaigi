@@ -6,5 +6,5 @@ export default () => {
   const [name, setName] = useState('');
   console.log({ name });
 
-  return <SignIn setName={setNmae} />;
+  return <SignIn setName={setName} />;
 };
