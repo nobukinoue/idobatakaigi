@@ -23,7 +23,7 @@ REACT_APP_FIREBASE_DATABASEURL,
  
   firebase.initializeApp(firebaseConfig);
   const database = firebase.database();
-  const messagesRef = database.ref('messages');
+  export const messagesRef = database.ref('messages');
 
   export const pushMessage = ({ name, text }) => {
       messagesRef.push({ name, text });
